@@ -3,9 +3,25 @@ server:
 
 logging:
   level:
-    web: DEBUG
+    web: info
 
 spring:
   devtools:
     restart:
       enabled: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/demo
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+
+oss:
+  enable: true
+  access-key: E4ckaaYRByxNGKPsDOuh
+  access-secret: aMkeKxtdLP5tyiGOg1NdD8fUpHXWgenfe02njByN
+  region: oss-cn-wuhan
+  endpoint: http://localhost:9000
+  pathStyleAccess: true
