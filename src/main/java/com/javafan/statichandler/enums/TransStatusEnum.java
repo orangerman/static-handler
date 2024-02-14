@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public enum TransStatusEnum implements BaseEnum<TransStatusEnum> {
     WAIT_TRANS(0, "待分账"),
-    TRANS_ING(1,"分帐中"),
+    TRANS_ING(1, "分帐中"),
     TRANS_SUCCESS(2, "分账成功"),
     TRANS_FAIL(3, "分账失败"),
     ;
