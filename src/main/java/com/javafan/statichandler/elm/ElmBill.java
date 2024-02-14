@@ -1,7 +1,10 @@
-package com.javafan.statichandler.model;
+package com.javafan.statichandler.elm;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.javafan.statichandler.enums.TransStatusEnum;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
@@ -10,7 +13,8 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class ElmBill {
 
-    private int id;
+    @TableId(type = IdType.AUTO)
+    private Integer id;
 
     @ExcelProperty(value = "门店ID")
     @NotBlank
@@ -31,7 +35,7 @@ public class ElmBill {
     @ExcelProperty(value = "结算入账ID")
     private String settle_conf_id;
 
-    private int trans_status;
+    private TransStatusEnum trans_status;
 
 
     public ElmBill init() {
@@ -40,7 +44,7 @@ public class ElmBill {
         return this;
     }
 
-    public void transfer(Integer trans_status) {
+    public void transfer(TransStatusEnum trans_status) {
         this.trans_status = trans_status;
     }
 }

@@ -11,7 +11,7 @@ import lombok.Data;
 public class TransBill {
 
     @TableId
-    private int id;
+    private Integer id;
 
     @ExcelProperty(value = "分账订单号")
     private String order_no;

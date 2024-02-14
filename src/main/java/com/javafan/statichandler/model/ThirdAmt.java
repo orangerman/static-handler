@@ -8,7 +8,7 @@ import lombok.Data;
 @TableName("t_third_amt")
 public class ThirdAmt {
 
-    private int id;
+    private Integer id;
 
     @ExcelProperty(value = "结算金额")
     private int amt;

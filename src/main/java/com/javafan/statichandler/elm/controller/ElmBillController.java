@@ -1,8 +1,8 @@
-package com.javafan.statichandler.controller;
+package com.javafan.statichandler.elm.controller;
 
 import com.alibaba.fastjson2.JSON;
-import com.javafan.statichandler.model.ElmBill;
-import com.javafan.statichandler.service.ElmBillService;
+import com.javafan.statichandler.elm.ElmBill;
+import com.javafan.statichandler.elm.service.ElmBillService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,7 +1,7 @@
-package com.javafan.statichandler.service;
+package com.javafan.statichandler.elm.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.javafan.statichandler.model.ElmBill;
+import com.javafan.statichandler.elm.ElmBill;
 
 import java.util.List;
 

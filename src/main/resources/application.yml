@@ -15,6 +15,7 @@ spring:
     password: root
 
 mybatis-plus:
+  type-enums-package: com.javafan.statichandler.enums
   configuration:
     map-underscore-to-camel-case: false
 
