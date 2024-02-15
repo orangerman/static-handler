@@ -17,6 +17,7 @@ import com.javafan.statichandler.model.ThirdAmt;
 import com.javafan.statichandler.model.TransBill;
 import com.only4play.oss.client.OssClient;
 import lombok.extern.slf4j.Slf4j;
+import one.util.streamex.StreamEx;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -106,8 +107,8 @@ class StaticHandlerApplicationTests {
 
     @Test
     public void testOss() throws IOException {
-        BufferedInputStream inputStream = FileUtil.getInputStream("C:\\Users\\fanzq\\Desktop\\新建 文本文档.txt");
-        PutObjectResult fzq = ossClient.putObject("fzq", "demo.txt", inputStream);
+
+
 
     }
 
