@@ -3,7 +3,7 @@ server:
 
 logging:
   level:
-    web: info
+    com.javafan.statichandler: info
 
 spring:
   devtools:
