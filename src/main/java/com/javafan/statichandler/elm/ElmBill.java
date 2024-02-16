@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.javafan.statichandler.enums.TransStatusEnum;
-import lombok.*;
+import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 
